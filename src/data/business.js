@@ -4,7 +4,7 @@ export const business = {
   founder: {
     name: "Bhuvana Morla",
     designation: "Founder & Managing Director",
-    credentials: "2026 Chairman – Media Coordination Task Force, JFG",
+
     bio: "With a profound passion for exploring the world's most breathtaking destinations, Bhuvana Morla established Lavish Holidays to transform how discerning travelers experience the globe. Her vision is rooted in the belief that every journey should be as unique as the traveler themselves, crafted with meticulous attention to detail and an unwavering commitment to excellence.",
     image: "/founder.png"
   },

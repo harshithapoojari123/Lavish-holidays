@@ -64,9 +64,6 @@ export default function Founder() {
               <p className="text-sm font-semibold tracking-widest uppercase text-brand-gold">
                 {business.founder.designation}
               </p>
-              <p className="text-[10px] tracking-[0.2em] uppercase text-brand-charcoal/50 pt-2 border-t border-brand-charcoal/10 inline-block mt-4">
-                {business.founder.credentials}
-              </p>
             </motion.div>
           </div>
 
