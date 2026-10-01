@@ -48,5 +48,11 @@ export const services = [
     name: "Worldwide Tours",
     description: "Comprehensive guided journeys exploring the globe's most captivating destinations.",
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    id: "cruises",
+    name: "Cruise Bookings",
+    description: "Luxurious ocean and river cruise experiences to majestic destinations worldwide.",
+    image: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?q=80&w=1600&auto=format&fit=crop"
   }
 ];

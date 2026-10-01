@@ -10,7 +10,7 @@ export default function Footer() {
           
           {/* Logo & Description */}
           <div className="lg:col-span-5 flex flex-col items-start">
-            <div className="bg-white/5 p-4 rounded-sm border border-white/10 mb-8 inline-block">
+            <div className="bg-white dark:bg-[#1A1A1A]/5 p-4 rounded-sm border border-white/10 mb-8 inline-block">
               <img 
                 src={business.logo} 
                 alt={business.name}

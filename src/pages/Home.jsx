@@ -8,7 +8,7 @@ import Contact from './Contact';
 
 export default function Home() {
   return (
-    <div className="bg-brand-ivory">
+    <div className="bg-brand-ivory dark:bg-brand-charcoal">
       <Hero />
       <About />
       <Services />

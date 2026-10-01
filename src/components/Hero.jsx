@@ -63,7 +63,7 @@ export default function Hero() {
             <a 
               href="#services"
               onClick={(e) => { e.preventDefault(); scrollTo('#services'); }}
-              className="w-full sm:w-auto px-10 py-5 bg-brand-gold text-white hover:bg-white hover:text-brand-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-[11px] font-bold shadow-2xl text-center"
+              className="w-full sm:w-auto px-10 py-5 bg-brand-gold text-white hover:bg-white hover:text-brand-charcoal dark:hover:bg-brand-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-[11px] font-bold shadow-2xl text-center"
             >
               Start Your Journey
             </a>
@@ -71,7 +71,7 @@ export default function Hero() {
             <a 
               href="#about"
               onClick={(e) => { e.preventDefault(); scrollTo('#about'); }}
-              className="w-full sm:w-auto px-10 py-5 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 transition-all duration-500 uppercase tracking-[0.2em] text-[11px] font-bold text-center backdrop-blur-sm"
+              className="w-full sm:w-auto px-10 py-5 bg-transparent border border-white/30 text-white hover:border-white hover:bg-white hover:text-brand-charcoal dark:hover:bg-brand-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-[11px] font-bold text-center backdrop-blur-sm"
             >
               Discover More
             </a>
@@ -91,12 +91,12 @@ export default function Hero() {
         <motion.div 
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="w-[1px] h-12 bg-white/20 relative overflow-hidden"
+          className="w-[1px] h-12 bg-white dark:bg-[#1A1A1A]/20 relative overflow-hidden"
         >
           <motion.div 
             animate={{ y: ['-100%', '100%'] }}
             transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
-            className="absolute top-0 left-0 w-full h-full bg-white/80"
+            className="absolute top-0 left-0 w-full h-full bg-white dark:bg-[#1A1A1A]/80"
           />
         </motion.div>
       </motion.div>

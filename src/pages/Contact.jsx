@@ -4,7 +4,7 @@ import { business } from '../data/business';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-brand-ivory px-6 lg:px-12 border-b border-brand-charcoal/5 relative overflow-hidden">
+    <section id="contact" className="py-24 md:py-32 bg-brand-ivory dark:bg-brand-charcoal px-6 lg:px-12 border-b border-brand-charcoal/5 dark:border-white/5 relative overflow-hidden">
       
       <div className="absolute left-1/2 top-0 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-brand-gold/30 to-transparent"></div>
 
@@ -24,7 +24,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-heading text-brand-charcoal leading-tight mb-8"
+            className="text-5xl md:text-6xl lg:text-7xl font-heading text-brand-charcoal dark:text-brand-ivory leading-tight mb-8"
           >
             Where will your next journey take you?
           </motion.h2>
@@ -34,7 +34,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 1 }}
-            className="text-brand-charcoal/60 font-light text-lg md:text-xl max-w-2xl mx-auto"
+            className="text-brand-charcoal/60 dark:text-brand-ivory/60 font-light text-lg md:text-xl max-w-2xl mx-auto"
           >
             Tell us about your travel plans and let's craft an itinerary perfectly suited to you.
           </motion.p>
@@ -48,13 +48,13 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="group flex flex-col items-center p-10 lg:p-12 bg-white hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5"
+            className="group flex flex-col items-center p-10 lg:p-12 bg-white dark:bg-[#1A1A1A] hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5 dark:border-white/5"
           >
-            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal border border-brand-charcoal/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal dark:text-brand-ivory border border-brand-charcoal/10 dark:border-white/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
               <MessageCircle className="w-6 h-6 stroke-[1.2]" />
             </div>
-            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal group-hover:text-white transition-colors duration-500">Chat & Call</h3>
-            <p className="text-brand-charcoal/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500">
+            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal dark:text-brand-ivory group-hover:text-white transition-colors duration-500">Chat & Call</h3>
+            <p className="text-brand-charcoal/60 dark:text-brand-ivory/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500">
               Speak directly with our travel specialists or send us a quick message.
             </p>
             <div className="flex flex-col gap-3 w-full mt-auto">
@@ -69,7 +69,7 @@ export default function Contact() {
               </a>
               <a 
                 href={`tel:${business.contact.phone.replace(/\\s/g, '')}`}
-                className="w-full py-3 border border-brand-charcoal/20 group-hover:border-white/20 text-brand-charcoal group-hover:text-white uppercase tracking-[0.2em] text-[10px] font-semibold transition-colors duration-500"
+                className="w-full py-3 border border-brand-charcoal/20 dark:border-white/20 group-hover:border-white/20 text-brand-charcoal dark:text-brand-ivory group-hover:text-white uppercase tracking-[0.2em] text-[10px] font-semibold transition-colors duration-500"
               >
                 Call {business.contact.phone}
               </a>
@@ -82,13 +82,13 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="group flex flex-col items-center p-10 lg:p-12 bg-white hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5"
+            className="group flex flex-col items-center p-10 lg:p-12 bg-white dark:bg-[#1A1A1A] hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5 dark:border-white/5"
           >
-            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal border border-brand-charcoal/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal dark:text-brand-ivory border border-brand-charcoal/10 dark:border-white/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
               <Mail className="w-6 h-6 stroke-[1.2]" />
             </div>
-            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal group-hover:text-white transition-colors duration-500">Email Us</h3>
-            <p className="text-brand-charcoal/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500">
+            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal dark:text-brand-ivory group-hover:text-white transition-colors duration-500">Email Us</h3>
+            <p className="text-brand-charcoal/60 dark:text-brand-ivory/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500">
               Send us your preferences and we'll craft an itinerary tailored for you.
             </p>
             <div className="flex flex-col gap-3 w-full mt-auto">
@@ -102,7 +102,7 @@ export default function Contact() {
                 href={`https://mail.google.com/mail/?view=cm&fs=1&to=${business.contact.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 border border-brand-charcoal/20 group-hover:border-white/20 text-brand-charcoal group-hover:text-white uppercase tracking-[0.2em] text-[10px] font-semibold transition-colors duration-500"
+                className="w-full py-3 border border-brand-charcoal/20 dark:border-white/20 group-hover:border-white/20 text-brand-charcoal dark:text-brand-ivory group-hover:text-white uppercase tracking-[0.2em] text-[10px] font-semibold transition-colors duration-500"
               >
                 Open in Gmail
               </a>
@@ -115,20 +115,20 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="group flex flex-col items-center p-10 lg:p-12 bg-white hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5"
+            className="group flex flex-col items-center p-10 lg:p-12 bg-white dark:bg-[#1A1A1A] hover:bg-brand-charcoal hover:text-white transition-colors duration-500 cursor-pointer shadow-sm hover:shadow-2xl border border-brand-charcoal/5 dark:border-white/5"
           >
-            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal border border-brand-charcoal/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center text-brand-charcoal dark:text-brand-ivory border border-brand-charcoal/10 dark:border-white/10 group-hover:border-brand-gold group-hover:text-brand-gold mb-8 transition-colors duration-500">
               <MapPin className="w-6 h-6 stroke-[1.2]" />
             </div>
-            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal group-hover:text-white transition-colors duration-500">Visit Us</h3>
-            <p className="text-brand-charcoal/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500 leading-relaxed max-w-[200px]">
+            <h3 className="font-heading text-3xl mb-4 text-brand-charcoal dark:text-brand-ivory group-hover:text-white transition-colors duration-500">Visit Us</h3>
+            <p className="text-brand-charcoal/60 dark:text-brand-ivory/60 group-hover:text-white/70 font-light text-sm mb-10 flex-grow transition-colors duration-500 leading-relaxed max-w-[200px]">
               {business.contact.address}
             </p>
             <a 
               href={business.contact.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-auto w-full py-4 border border-brand-charcoal/20 group-hover:border-white/20 text-brand-charcoal group-hover:text-white uppercase tracking-[0.2em] text-[10px] md:text-xs font-semibold transition-colors duration-500"
+              className="mt-auto w-full py-4 border border-brand-charcoal/20 dark:border-white/20 group-hover:border-white/20 text-brand-charcoal dark:text-brand-ivory group-hover:text-white uppercase tracking-[0.2em] text-[10px] md:text-xs font-semibold transition-colors duration-500"
             >
               Get Directions
             </a>

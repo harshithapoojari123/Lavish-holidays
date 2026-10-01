@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${business.contact.whatsapp}?text=Hello Lavish Holidays, I would like to enquire about planning a trip.`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 bg-transparent border border-brand-charcoal/20 text-brand-charcoal rounded-full hover:bg-brand-charcoal hover:text-white transition-all duration-500 group bg-white/80 backdrop-blur-md"
+      className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 bg-transparent border border-brand-charcoal/20 dark:border-white/20 text-brand-charcoal dark:text-brand-ivory rounded-full hover:bg-brand-charcoal hover:text-white transition-all duration-500 group bg-white dark:bg-[#1A1A1A]/80 backdrop-blur-md"
       aria-label="Contact us on WhatsApp"
     >
       <svg

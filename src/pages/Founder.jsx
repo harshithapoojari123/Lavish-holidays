@@ -3,7 +3,7 @@ import { business } from '../data/business';
 
 export default function Founder() {
   return (
-    <section id="founder" className="py-24 md:py-32 px-6 lg:px-12 bg-brand-ivory text-brand-charcoal">
+    <section id="founder" className="py-24 md:py-32 px-6 lg:px-12 bg-brand-ivory dark:bg-brand-charcoal text-brand-charcoal dark:text-brand-ivory">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           
@@ -46,7 +46,7 @@ export default function Founder() {
               <span className="absolute -top-16 -left-10 text-8xl font-heading text-brand-charcoal/5 leading-none select-none hidden md:block">
                 "
               </span>
-              <p className="text-3xl md:text-5xl font-heading leading-[1.2] text-brand-charcoal relative z-10">
+              <p className="text-3xl md:text-5xl font-heading leading-[1.2] text-brand-charcoal dark:text-brand-ivory relative z-10">
                 "Our goal is not merely to send you to a destination, but to guide you toward moments that resonate deeply and stay with you forever."
               </p>
             </motion.div>
@@ -58,7 +58,7 @@ export default function Founder() {
               transition={{ duration: 1, delay: 0.4 }}
               className="space-y-2"
             >
-              <h3 className="text-2xl font-heading tracking-wide uppercase text-brand-charcoal">
+              <h3 className="text-2xl font-heading tracking-wide uppercase text-brand-charcoal dark:text-brand-ivory">
                 {business.founder.name}
               </h3>
               <p className="text-sm font-semibold tracking-widest uppercase text-brand-gold">
