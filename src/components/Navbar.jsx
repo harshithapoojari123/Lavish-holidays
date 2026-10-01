@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { business } from '../data/business';
 import { cn } from '../utils/cn';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -78,24 +79,28 @@ export default function Navbar() {
               href={`https://wa.me/${business.contact.whatsapp}?text=Hello Lavish Holidays, I would like to enquire about planning a trip.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-white/10 hover:bg-white text-white hover:text-brand-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-[10px] font-semibold backdrop-blur-sm"
+              className="px-8 py-3 bg-white/10 hover:bg-white text-white hover:text-brand-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-[10px] font-semibold backdrop-blur-sm mr-4"
             >
               Start Your Journey
             </a>
           </div>
 
-          {/* Mobile Toggle */}
-          <button 
-            className="lg:hidden z-50 p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6 text-white" />
-            ) : (
-              <Menu className="w-6 h-6 text-white" />
-            )}
-          </button>
+          <div className="flex items-center gap-2 z-50">
+            <DarkModeToggle />
+            
+            {/* Mobile Toggle */}
+            <button 
+              className="lg:hidden p-2"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle Menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-white" />
+              ) : (
+                <Menu className="w-6 h-6 text-white" />
+              )}
+            </button>
+          </div>
         </div>
       </motion.nav>
 
