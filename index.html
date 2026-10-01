@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Google Site Verification -->
@@ -17,18 +18,19 @@
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lavishholidays.com/" />
+    <meta property="og:url" content="https://lavish-holidays.netlify.app/" />
+    <meta property="og:site_name" content="Lavish Holidays" />
     <meta property="og:title" content="Lavish Holidays | Premium Travel & Curated Journeys" />
     <meta property="og:description" content="Experience the art of fine travel with Lavish Holidays. We curate premium, personalized journeys, exclusive hotel reservations, and worldwide tours." />
     <!-- Using the logo for social sharing previews -->
-    <meta property="og:image" content="/logo.jpg" />
+    <meta property="og:image" content="/favicon.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://lavishholidays.com/" />
+    <meta property="twitter:url" content="https://lavish-holidays.netlify.app/" />
     <meta property="twitter:title" content="Lavish Holidays | Premium Travel & Curated Journeys" />
     <meta property="twitter:description" content="Experience the art of fine travel with Lavish Holidays. We curate premium, personalized journeys, exclusive hotel reservations, and worldwide tours." />
-    <meta property="twitter:image" content="/logo.jpg" />
+    <meta property="twitter:image" content="/favicon.png" />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,26 +41,35 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Lavish Holidays",
-      "description": "Premium travel agency curating personalized journeys, exclusive hotel reservations, and worldwide tours.",
-      "url": "https://lavishholidays.com/",
-      "logo": "https://lavishholidays.com/logo.jpg",
-      "telephone": "+91-8555076959",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Flat C16, LIC Jeevan Soudha Apartments, HB Colony",
-        "addressLocality": "Visakhapatnam",
-        "addressRegion": "Andhra Pradesh",
-        "postalCode": "530022",
-        "addressCountry": "IN"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Bhuvana Morla",
-        "jobTitle": "Founder & Managing Director"
-      },
-      "priceRange": "$$$"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Lavish Holidays",
+          "url": "https://lavish-holidays.netlify.app/"
+        },
+        {
+          "@type": "TravelAgency",
+          "name": "Lavish Holidays",
+          "description": "Premium travel agency curating personalized journeys, exclusive hotel reservations, and worldwide tours.",
+          "url": "https://lavish-holidays.netlify.app/",
+          "logo": "https://lavish-holidays.netlify.app/favicon.png",
+          "telephone": "+91-8555076959",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Flat C16, LIC Jeevan Soudha Apartments, HB Colony",
+            "addressLocality": "Visakhapatnam",
+            "addressRegion": "Andhra Pradesh",
+            "postalCode": "530022",
+            "addressCountry": "IN"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Bhuvana Morla",
+            "jobTitle": "Founder & Managing Director"
+          },
+          "priceRange": "$$$"
+        }
+      ]
     }
     </script>
   </head>
