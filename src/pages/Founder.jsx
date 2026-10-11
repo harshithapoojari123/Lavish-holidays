@@ -14,7 +14,7 @@ export default function Founder() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="relative aspect-[3/4] w-full overflow-hidden rounded-sm"
+              className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-white dark:border-slate-800"
             >
               <img 
                 src={business.founder.image} 

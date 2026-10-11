@@ -6,7 +6,7 @@ export const business = {
     name: "Bhuvana Morla",
     designation: "Founder & Managing Director",
     bio: "With a profound passion for exploring the world's most breathtaking destinations, Bhuvana Morla established Lavish Holidays to transform how discerning travelers experience the globe. Her vision is rooted in the belief that every journey should be as unique as the traveler themselves, crafted with meticulous attention to detail and an unwavering commitment to excellence.",
-    image: "/founder.png"
+    image: "/founder.jpg"
   },
   contact: {
     phone: "+91 8555076959",
@@ -33,6 +33,13 @@ export const heroSlides = [
     locationTag: "Maldives • Private Island Haven"
   },
   {
+    image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=85&w=2000&auto=format&fit=crop",
+    eyebrow: "PARADISE ON EARTH • DOMESTIC WONDERS",
+    title: "Enchanting Kashmir & Himalayas",
+    subtitle: "Glide through Dal Lake in private shikaras, ascend snow-peaked summits, and indulge in luxury mountain retreats.",
+    locationTag: "India • Kashmir & Himachal"
+  },
+  {
     image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=85&w=2000&auto=format&fit=crop",
     eyebrow: "HANDCRAFTED LUXURY VOYAGES",
     title: "Grand European Escapes",
@@ -40,15 +47,16 @@ export const heroSlides = [
     locationTag: "Europe • Swiss Alps & Paris"
   },
   {
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=85&w=2000&auto=format&fit=crop",
-    eyebrow: "TROPICAL SANCTUARIES",
-    title: "Enchanting Bali & Far East",
-    subtitle: "Emerald rice terraces, ancient water temples, pristine beaches and private luxury villas.",
-    locationTag: "Bali • Tropical Retreats"
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=85&w=2000&auto=format&fit=crop",
+    eyebrow: "TROPICAL SANCTUARIES & BACKWATERS",
+    title: "Serene Kerala & Exotic Bali",
+    subtitle: "Private luxury houseboats in Alleppey, emerald Munnar tea hills, and peaceful ocean sunsets.",
+    locationTag: "Kerala • God's Own Country"
   }
 ];
 
 export const specialInterests = [
+  { id: "domestic", name: "Domestic Getaways", icon: "Compass", color: "from-teal-500/10 to-emerald-500/10" },
   { id: "honeymoon", name: "Honeymoon Packages", icon: "Heart", color: "from-rose-500/10 to-pink-500/10" },
   { id: "family", name: "Family Holidays", icon: "Users", color: "from-amber-500/10 to-orange-500/10" },
   { id: "group", name: "Group Tours", icon: "UsersRound", color: "from-blue-500/10 to-indigo-500/10" },
@@ -57,16 +65,18 @@ export const specialInterests = [
   { id: "spiritual", name: "Spiritual Journeys", icon: "Sparkles", color: "from-orange-500/10 to-amber-600/10" },
   { id: "beach", name: "Beach Vacations", icon: "Palmtree", color: "from-cyan-500/10 to-blue-500/10" },
   { id: "international", name: "International Packages", icon: "Globe", color: "from-indigo-500/10 to-violet-500/10" },
-  { id: "domestic", name: "Domestic Getaways", icon: "Compass", color: "from-teal-500/10 to-emerald-500/10" },
   { id: "customized", name: "Customized Holidays", icon: "SlidersHorizontal", color: "from-purple-500/10 to-pink-500/10" }
 ];
 
 export const popularDestinations = [
+  // INTERNATIONAL DESTINATIONS
   {
     id: "maldives",
     name: "Maldives",
     tagline: "Overwater Villas & Azure Lagoons",
     category: "Beach Vacations",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Private Overwater Bungalows", "Snorkeling with Manta Rays", "Underwater Dining", "Speedboat & Seaplane Transfers"]
@@ -76,6 +86,8 @@ export const popularDestinations = [
     name: "Europe",
     tagline: "Paris, Switzerland & Italian Lakes",
     category: "International Packages",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Eiffel Tower & Seine Cruise", "Swiss Alps Jungfraujoch", "Venice Gondola Rides", "Scenic High-Speed Trains"]
@@ -85,6 +97,8 @@ export const popularDestinations = [
     name: "Bali",
     tagline: "Temples, Terraces & Ocean Sunsets",
     category: "Honeymoon Packages",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Ubud Private Pool Villas", "Ulun Danu Water Temple", "Nusa Penida Day Tour", "Traditional Balinese Spa"]
@@ -94,6 +108,8 @@ export const popularDestinations = [
     name: "Dubai",
     tagline: "Futuristic Wonders & Desert Glamour",
     category: "Luxury Experiences",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Burj Khalifa Top View", "VIP Desert Safari with BBQ", "Marina Luxury Yacht Cruise", "Dazzling Gold & Spice Souks"]
@@ -103,6 +119,8 @@ export const popularDestinations = [
     name: "Thailand",
     tagline: "Tropical Islands & Grand Palaces",
     category: "Beach Vacations",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Phuket Luxury Resorts", "Phi Phi Islands Speedboat", "Bangkok Floating Markets", "Iconic Buddhist Sanctuaries"]
@@ -112,9 +130,79 @@ export const popularDestinations = [
     name: "Singapore",
     tagline: "Garden Metropolis & Sentosa Fun",
     category: "Family Holidays",
+    region: "international",
+    country: "International",
     image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=85&w=1000&auto=format&fit=crop",
     featured: true,
     highlights: ["Marina Bay Sands SkyPark", "Gardens by the Bay Avatar Grove", "Sentosa Island Cable Car", "Universal Studios VIP Access"]
+  },
+
+  // DOMESTIC INDIAN DESTINATIONS
+  {
+    id: "kashmir",
+    name: "Kashmir",
+    tagline: "Paradise on Earth • Dal Lake & Gulmarg",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["Dal Lake Luxury Houseboat Stay", "Private Sunset Shikara Rides", "Gulmarg Gondola Snow Cable Car", "Pahalgam Betaab & Aru Valleys"]
+  },
+  {
+    id: "kerala",
+    name: "Kerala",
+    tagline: "God's Own Country • Alleppey & Munnar",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["Alleppey Private Luxury Houseboat", "Munnar Rolling Tea Garden Trails", "Thekkady Periyar Wildlife Safari", "Kovalam Beach Sunset Stays"]
+  },
+  {
+    id: "goa",
+    name: "Goa",
+    tagline: "Coastal Luxury & Heritage Beachfronts",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["South Goa 5★ Beachfront Stays", "Private Sunset Luxury Catamaran", "Old Goa Latin Quarter Architecture", "Candlelight Beachfront Dining"]
+  },
+  {
+    id: "rajasthan",
+    name: "Rajasthan",
+    tagline: "Royal Heritage • Udaipur & Jaipur Forts",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["Lake Pichola Udaipur Boat Cruise", "Grand Royal Heritage Palace Stays", "Amber Fort & City Palace Guided Tour", "Desert Camp & Rajasthani Folk Evenings"]
+  },
+  {
+    id: "andaman",
+    name: "Andaman Islands",
+    tagline: "Turquoise Havens • Havelock & Radhanagar",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["Havelock Island Barefoot Luxury", "Asia's Finest Radhanagar Beach", "Scuba Diving & Coral Island Reefs", "Private Catamaran Island Transfers"]
+  },
+  {
+    id: "himachal",
+    name: "Himachal (Manali & Shimla)",
+    tagline: "Snowy Summits & Pine Valley Sanctuaries",
+    category: "Domestic India",
+    region: "domestic",
+    country: "India",
+    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=85&w=1000&auto=format&fit=crop",
+    featured: true,
+    highlights: ["Solang Valley Adventure & Snow Thrills", "Atal Tunnel & Sissu Valley Drive", "Shimla Mall Road & British Heritage", "Charming Pine Forest Cottages"]
   }
 ];
 
@@ -126,6 +214,7 @@ export const featuredPackages = [
     name: "Maldives Bliss",
     tagline: "Crystal clear waters, luxury overwater villa stay & private island experience",
     destination: "Maldives",
+    region: "international",
     duration: "4N / 5D",
     mealPlan: "All Inclusive Meals",
     hotelCategory: "5★ Overwater Villa Resort",
@@ -138,12 +227,32 @@ export const featuredPackages = [
     ]
   },
   {
+    id: "kashmir-paradise",
+    badge: "Domestic Favourite",
+    badgeColor: "bg-emerald-600 text-white",
+    name: "Kashmir Serenity",
+    tagline: "Srinagar, Gulmarg & Pahalgam – Heaven on Earth with private shikaras",
+    destination: "Kashmir, India",
+    region: "domestic",
+    duration: "5N / 6D",
+    mealPlan: "Breakfast & Gourmet Dinners",
+    hotelCategory: "Luxury Houseboat & 5★ Mountain Resort",
+    image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=85&w=1000&auto=format&fit=crop",
+    highlights: [
+      "Exclusive stay in carved cedarwood luxury houseboat on Dal Lake",
+      "Sunset Shikara ride through floating lotus gardens",
+      "Gulmarg Gondola 2nd phase mountain cable car pass",
+      "Pahalgam scenic valley excursion & Lidder river walks"
+    ]
+  },
+  {
     id: "european-delight",
     badge: "Most Popular",
     badgeColor: "bg-blue-600 text-white",
     name: "European Delight",
     tagline: "Paris, Switzerland, Italy – A magical, bespoke European grand tour",
     destination: "Europe",
+    region: "international",
     duration: "7N / 8D",
     mealPlan: "Daily Breakfast & Select Dinners",
     hotelCategory: "4★ & 5★ Premium Hotels",
@@ -156,12 +265,32 @@ export const featuredPackages = [
     ]
   },
   {
+    id: "kerala-backwaters",
+    badge: "Pure Relaxation",
+    badgeColor: "bg-teal-600 text-white",
+    name: "Kerala Backwaters & Hills",
+    tagline: "Munnar tea gardens, Thekkady spices & Alleppey private houseboats",
+    destination: "Kerala, India",
+    region: "domestic",
+    duration: "5N / 6D",
+    mealPlan: "Daily Breakfast & Houseboat All Meals",
+    hotelCategory: "5★ Tea Plantation Resort & Houseboat",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=85&w=1000&auto=format&fit=crop",
+    highlights: [
+      "Traditional motorized houseboat with private chef in Alleppey",
+      "Munnar rolling misty tea gardens & Eravikulam National Park",
+      "Thekkady spice plantation guided botanical walk",
+      "Authentic Kerala Ayurvedic wellness massage experience"
+    ]
+  },
+  {
     id: "bali-escape",
     badge: "Trending",
     badgeColor: "bg-emerald-600 text-white",
     name: "Bali Escape",
     tagline: "Beaches, cultural sanctuaries, adventure & serene tropical relaxation",
     destination: "Bali",
+    region: "international",
     duration: "5N / 6D",
     mealPlan: "Daily Gourmet Breakfast",
     hotelCategory: "4★ Boutique Pool Villa",
@@ -180,6 +309,7 @@ export const featuredPackages = [
     name: "Dubai Experience",
     tagline: "Iconic architectural wonders, desert safari, luxury shopping & cruises",
     destination: "Dubai",
+    region: "international",
     duration: "4N / 5D",
     mealPlan: "Daily Breakfast & Desert BBQ",
     hotelCategory: "5★ City Luxury Stay",
@@ -229,33 +359,6 @@ export const whyChooseFeatures = [
     title: "Hassle-Free Experience",
     description: "End-to-end management covering flight tickets, luxury stays, private transfers, visas & excursions.",
     icon: "Luggage"
-  }
-];
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "Priya & Family",
-    trip: "Maldives Island Getaway",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop",
-    review: "Our Maldives trip was absolutely perfect! Excellent planning and 24/7 support from the Lavish Holidays team. The overwater villa recommended by them was breathtaking.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Rakesh Kumar",
-    trip: "Switzerland & Paris Tour",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop",
-    review: "Europe trip was a dream come true. Everything was well organized, transfers were super smooth and completely hassle-free. Highly recommended for family travels!",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Suma Reddy",
-    trip: "Dubai Luxury Holiday",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop",
-    review: "Professional, friendly, and always available. Our Dubai vacation was truly memorable thanks to Lavish Holidays. Their attention to detail was exceptional.",
-    rating: 5
   }
 ];
 
